@@ -1,0 +1,246 @@
+{
+  "features": [
+    "score_differential",
+    "ep",
+    "exp_score_diff",
+    "diff_time_ratio",
+    "game_seconds_remaining",
+    "half_seconds_remaining",
+    "down",
+    "ydstogo",
+    "yardline_100",
+    "posteam_timeouts_remaining",
+    "defteam_timeouts_remaining",
+    "posteam_is_home",
+    "receive_2h_ko",
+    "is_second_half",
+    "posteam_spread",
+    "spread_time",
+    "sab_third_conv_diff",
+    "sab_epa_rush_diff",
+    "sab_turnover_diff"
+  ],
+  "skill_source": "spread",
+  "ytd": false,
+  "v2": false,
+  "ingame": false,
+  "saber": true,
+  "saber_only": "third_conv,epa_rush,turnover",
+  "context": false,
+  "qb": false,
+  "monotone": false,
+  "ep_features": [
+    "down",
+    "ydstogo",
+    "yardline_100",
+    "half_seconds_remaining",
+    "goal_to_go",
+    "posteam_is_home",
+    "posteam_timeouts_remaining",
+    "defteam_timeouts_remaining"
+  ],
+  "ep_model": "C:\\Users\\saint\\OneDrive\\Documents\\NFL_MODEL\\nfl_ep_model.json",
+  "train_seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "eval_seasons": [
+    2025
+  ],
+  "fit_procedure": "leave-one-season-out early stopping; final refit on the training seasons, minus --calib-season when given, whose predictions then fit the isotonic map",
+  "fit_seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "final_rounds": 304,
+  "fold_best_iterations": [
+    474,
+    207,
+    215,
+    276,
+    215,
+    417,
+    286,
+    229,
+    334,
+    633,
+    334,
+    169,
+    156,
+    671
+  ],
+  "fold_metrics": {
+    "2011": {
+      "n": 39959,
+      "logloss": 0.4665659284081787,
+      "brier": 0.1567087683458634,
+      "base_rate": 0.5065942591155935,
+      "base_rate_logloss": 0.6930602095320291,
+      "best_iteration": 474
+    },
+    "2012": {
+      "n": 39988,
+      "logloss": 0.4575405842680642,
+      "brier": 0.1519432946196085,
+      "base_rate": 0.5024007202160649,
+      "base_rate_logloss": 0.6931356536005434,
+      "best_iteration": 207
+    },
+    "2013": {
+      "n": 40307,
+      "logloss": 0.4601537994275645,
+      "brier": 0.15266074335016463,
+      "base_rate": 0.505743419257201,
+      "base_rate_logloss": 0.6930812053794967,
+      "best_iteration": 215
+    },
+    "2014": {
+      "n": 40143,
+      "logloss": 0.4448579403941065,
+      "brier": 0.14660259380711296,
+      "base_rate": 0.5103754079166978,
+      "base_rate_logloss": 0.6929318669273057,
+      "best_iteration": 276
+    },
+    "2015": {
+      "n": 40331,
+      "logloss": 0.47136348148652835,
+      "brier": 0.15774618413107774,
+      "base_rate": 0.5022439314671097,
+      "base_rate_logloss": 0.6931371100692822,
+      "best_iteration": 215
+    },
+    "2016": {
+      "n": 39936,
+      "logloss": 0.46319111624786996,
+      "brier": 0.15223862237507332,
+      "base_rate": 0.5047450921474359,
+      "base_rate_logloss": 0.6931021480849914,
+      "best_iteration": 417
+    },
+    "2017": {
+      "n": 39749,
+      "logloss": 0.40888693641624757,
+      "brier": 0.13181551510176584,
+      "base_rate": 0.5114845656494503,
+      "base_rate_logloss": 0.6928833668635942,
+      "best_iteration": 286
+    },
+    "2018": {
+      "n": 39173,
+      "logloss": 0.43709131370019566,
+      "brier": 0.14230695021245818,
+      "base_rate": 0.5065351134710132,
+      "base_rate_logloss": 0.69306176271169,
+      "best_iteration": 229
+    },
+    "2019": {
+      "n": 39658,
+      "logloss": 0.43075928213158904,
+      "brier": 0.14113958364819035,
+      "base_rate": 0.5017650915326037,
+      "base_rate_logloss": 0.693140949450766,
+      "best_iteration": 334
+    },
+    "2020": {
+      "n": 39715,
+      "logloss": 0.4266435799665852,
+      "brier": 0.1387914484323716,
+      "base_rate": 0.5046330101976583,
+      "base_rate_logloss": 0.6931042503786251,
+      "best_iteration": 633
+    },
+    "2021": {
+      "n": 41500,
+      "logloss": 0.4382549513371179,
+      "brier": 0.14579216228754108,
+      "base_rate": 0.510722891566265,
+      "base_rate_logloss": 0.6929172021222938,
+      "best_iteration": 334
+    },
+    "2022": {
+      "n": 41247,
+      "logloss": 0.5070514491136507,
+      "brier": 0.1671939535995736,
+      "base_rate": 0.5084127330472519,
+      "base_rate_logloss": 0.6930056257259136,
+      "best_iteration": 169
+    },
+    "2023": {
+      "n": 41706,
+      "logloss": 0.45854362395754233,
+      "brier": 0.1517386699277987,
+      "base_rate": 0.5065697981105836,
+      "base_rate_logloss": 0.6930608535813733,
+      "best_iteration": 156
+    },
+    "2024": {
+      "n": 41283,
+      "logloss": 0.4169096129398196,
+      "brier": 0.13652394262262624,
+      "base_rate": 0.5030642152944311,
+      "base_rate_logloss": 0.6931284016116542,
+      "best_iteration": 671
+    }
+  },
+  "oof_metrics": {
+    "n": 564695,
+    "logloss": 0.44925669802678087,
+    "brier": 0.14813794580078488,
+    "base_rate": 0.5061032946989082,
+    "base_rate_logloss": 0.6930726782973677
+  },
+  "oof_metrics_calibrated": null,
+  "holdout_metrics_raw": {
+    "n": 40516,
+    "logloss": 0.4761958172060378,
+    "brier": 0.15808788698358042,
+    "base_rate": 0.5092926251357488,
+    "base_rate_logloss": 0.6929744648523173
+  },
+  "holdout_metrics_calibrated": null,
+  "calibration_file": "C:\\Users\\saint\\OneDrive\\Documents\\NFL_MODEL\\nfl_wp_calibration.json",
+  "skill_sign_corr": {
+    "posteam_spread": 0.3910327490538198
+  },
+  "sign_convention": "posteam_spread / posteam_skill_diff positive = possession team favored; source spread_line and skill_diff positive = home team favored",
+  "params": {
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "eta": 0.03,
+    "max_depth": 4,
+    "min_child_weight": 300.0,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "lambda": 5.0,
+    "alpha": 1.0,
+    "tree_method": "hist",
+    "seed": 1729
+  },
+  "n_train_rows": 564695,
+  "n_eval_rows": 40516
+}
